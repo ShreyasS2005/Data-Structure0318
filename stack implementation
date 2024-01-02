@@ -2,7 +2,6 @@
 int top=-1;
 int max=3;
 int stack[3];
-
 int isempty()
 {
 if(top==-1)
@@ -57,6 +56,5 @@ int main()
 	pop();
 	pop();
 	printf("%d ",stack[top]);
- 
   return 0;  
 }

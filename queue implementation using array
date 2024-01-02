@@ -1,0 +1,64 @@
+#include <stdio.h>
+int max=5;
+int rear=-1;
+int front=-1;
+int q[5];
+int isfull()
+{
+    if(rear>=4)
+    return 1;
+    else
+    return 0;
+}
+int empty()
+{
+    if(rear==-1&&front==-1)
+    return 1;
+    else
+    return 0;
+}
+int enq(int x)
+{
+    if(!isfull())
+    {
+    rear=rear+1;
+    q[rear]=x;
+    }
+    else
+    printf("Queue Is Full ! ");
+    return 0;
+}
+int deq()
+{
+   if(!empty())
+   {
+    front=front+1;
+    q[front]=0;
+   }
+   else
+   printf("Queue is Empty ");
+    return 0;
+}
+int main()
+{
+   enq(12);
+   enq(23);
+   enq(34);
+   enq(45);
+   enq(56);
+   enq(47);
+   enq(78);
+  deq();
+  deq();
+  deq();
+    printf("\nRear : %d \n",rear);
+    printf("Front : %d \n",front);  
+    for(int i=0;i<=4;i++)
+    {
+        if(q[i]!=0)
+        {
+            printf("%d ",q[i]);
+        }
+    }
+    return 0;
+}

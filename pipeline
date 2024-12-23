@@ -3,10 +3,10 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_CREDENTIALS_ID = 'docker-hub-credentialss'  // Docker credentials ID
+        DOCKER_CREDENTIALS_ID = 'abc123'  // Docker credentials ID
         IMAGE_NAME = 'jsam28/getting-started'
-        GIT_REPO = 'https://github.com/jsam2005/getting-started-app.git'
-        GIT_CREDENTIALS_ID = 'docker-hub-credentials'  // GitHub credentials ID
+        GIT_REPO = 'https://github.com/ShreyasS2005/pipeline.git'
+        GIT_CREDENTIALS_ID = 'xyz123'  // GitHub credentials ID
     }
 
     stages {

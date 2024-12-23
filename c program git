@@ -5,6 +5,7 @@ cd pathname
 git add .
 git commit -m "first commit"
 git push origin main
-git pullgit status
+git pull
+git status
 to merge
 git merge (branch name)

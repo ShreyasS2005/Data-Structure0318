@@ -1,11 +1,18 @@
 git config --global user.name "xxx"
 git config --global user.email "xxx"
-git clone link
-cd pathname
+git clone https://github.com/ShreyasS2005/test.git
+cd test
 git add .
-git commit -m "first commit"
+git commit -m "ok"
 git push origin main
 git pull
-git status
-to merge
-git merge (branch name)
+git branch absar
+git push origin absar
+git branch -a  to check branch
+git checkout absar
+git add .
+git commit -m "hmm"
+git push origin absar
+git checkout main
+git merge absar
+git push origin main

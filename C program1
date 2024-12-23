@@ -58,7 +58,7 @@ spec:
       - name: nginx 
         image: nginx:1.21 
         ports: 
-        - containerPort: 80 
+        - containerPort: 82 
 
 
 Apply the Deployment: 

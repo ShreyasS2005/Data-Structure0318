@@ -6,3 +6,5 @@ git add .
 git commit -m "first commit"
 git push origin main
 git pullgit status
+to merge
+git merge (branch name)
